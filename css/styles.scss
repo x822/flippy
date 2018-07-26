@@ -1,0 +1,122 @@
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'grid';
+@import 'type';
+@import 'flipbook';
+@import 'themify-icons';
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: $hdfc-white;
+	margin: 0;
+	font-family: Helvetica;
+}
+
+body::selection {
+		background: transparent; /* WebKit/Blink Browsers */
+	}	
+body::-moz-selection {
+		background: transparent; /* Gecko Browsers */
+}
+
+//Header
+
+header {
+	width:100%;
+	background-color: $text-color-lighter;
+	height: 50px;
+	position: fixed;
+	top: 0;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    
+    span {
+	    float: left;
+	    font-size: 25px;
+	    display: block;
+	    color: $hdfc-blue;
+	    text-decoration: none;
+	    margin-top: 12.5px;
+	    line-height: 25px;
+	    margin-bottom: 12.5px;
+	
+	    &:first-of-type {
+		    margin-left:12.5px;
+		    margin-right: 12.5px;
+	    }
+	    
+	    &:last-of-type {
+			margin-right: none;
+		    margin-left:12.5px;
+		    border: none;
+	    }
+	    &:hover {
+			text-decoration: none;
+		}	
+	}
+}
+
+    
+
+// Flipbook
+    #content {
+      height: calc(100vh - 120px);
+      -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  margin-top: 50px;
+      
+      @media only screen and (max-width: 1000px) {
+	      height: calc(100vh - 100px);
+      }
+      
+      @media only screen and (max-width: 768px) {
+	      height: calc(100vh - 100px);
+      }
+      
+      @media only screen and (max-width: 480px) {
+	      height: calc(100vh - 175px);
+      }
+    }
+
+// Footer
+footer {
+	background-color: $hdfc-blue;
+	color: $hdfc-white;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	
+	span {
+	    float: left;
+	    display: block;
+	    color: $hdfc-white;
+	    text-align: center;
+	    text-decoration: none;
+	    margin-top: 19px;
+	    margin-bottom: 19px;
+	    padding-right: 12.5px;
+	    border-right: $hdfc-red 2px solid;
+	    margin-left: 12.5px;
+	    line-height: 12px;
+	    vertical-align: middle;
+	    font-size:  12px;
+	    
+	    &:last-of-type {
+		    padding-right: none;
+		    margin-right: none;
+		    border: none;
+	    }
+	
+	}
+}
+

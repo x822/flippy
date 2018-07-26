@@ -1,0 +1,24 @@
+// Variables
+
+// brand Colors
+$hdfc-blue: rgb(00,51,127);
+$hdfc-red: rgb(255,00,00);
+$hdfc-white: rgb(254,254,254);
+
+// text Colors
+$text-color: rgb(87,87,87);
+$text-color-lighter: rgb(146,146,146);
+$text-color-lighter: rgb(210,211,213);
+
+// background Colors
+$hdfc-blue-back: $hdfc-blue;
+$hdfc-medium-back: rgb(121,191,233);
+
+
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+
+// breakpoints
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 30em)";

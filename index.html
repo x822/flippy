@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>HDFC Bank CSA | FlipBook</title>
+  <meta name="description" content="">
+  <meta name="author" content="HDFC Bank | CSA">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+  
+  <!-- Top Navigation -->
+  <header>
+	<div class="wrapper">
+		<nav class="navbar">
+			<span><a href="https://www.hdfcbank.com"><img src="images/logo_hdfcbank.gif" alt="logo_hdfcbank"></a></span>
+			<span><img src="images/seperator.png" alt="seperator"></span>
+			<span><a href="https://www.hdfcbank.com/personal/products/accounts-and-deposits/salary-accounts"><img src="images/perks_logo.jpg" alt="perks_logo"></a></span>
+		</nav>
+	</div>
+  </header>
+  
+  <!-- Main Content -->
+  <section id="content">
+  	<div class="_df_book" id="hdfc_flipbook"></div> 	
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+	  <div class="wrapper">
+		  <span>&copy 2018 HDFC Bank Ltd. All rights reserved.</span>
+	  </div>
+  </footer>	  
+  
+  <!-- Scripts -->
+	<!-- jQuery 1.9.1 or above -->
+  	<script src="js/libs/jquery.min.js" type="text/javascript"></script>
+	<!-- Flipbook main Js file -->
+	<script src="js/flipbook.min.js" type="text/javascript"></script>	    
+	  	
+	  	
+	<script>
+		jQuery(document).ready(function () {
+			
+	    	var pdf = 'pdf/Switch_2_Save.pdf'; //Change PDF to be displayed from here
+			
+			var flipBook = $("#hdfc_flipbook").flipBook(pdf);
+			
+			});
+	</script>
+
+</body>
+</html>
