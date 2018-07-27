@@ -60,8 +60,12 @@
 		  var flipBook;
 		  jQuery(document).ready(function () {
 		
-		    var pdf = 'pdf/Switch_2_Save.pdf'; //Change PDF to be displayed from here
+		    //Change PDF to be displayed from here
+		    var pdf = 'pdf/Switch_2_Save.pdf';
 		
+		    //Change images to be displayed from here (each image is one page)
+		    var jpg = ["book/1.jpg","book/2.jpg","book/3.jpg","book/4.jpg","book/5.jpg","book/6.jpg","book/7.jpg","book/8.jpg","book/9.jpg","book/10.jpg","book/11.jpg","book/12.jpg","book/13.jpg","book/14.jpg","book/15.jpg","book/16.jpg","book/17.jpg","book/18.jpg","book/19.jpg","book/20.jpg","book/21.jpg","book/22.jpg","book/23.jpg","book/24.jpg","book/25.jpg","book/26.jpg","book/27.jpg","book/28.jpg",]; 
+		    
 		    var options = {
 		      webgl: false,
 		      transparent: true,
@@ -69,17 +73,17 @@
 		    };
 		
 		
-		    //PAGE 12
+		    //PAGE 28
 		    //first two parameters are width and height of page
 		    //other are array of hotspots with their attributes
-		    options.links[12] = [
+		    options.links[28] = [
 		      500, //width of page
 		      500, //height of page
 		      //[x-start-position,y-start-position,width,height,destination]
-		      [50, 50, 410, 300, "https://www.hdfcbank.com"], //destination as link
+		      [50, 50, 300, 300, "https://www.hdfcbank.com"], //destination as link
 		    ];
 		
-		    flipBook = $("#hdfc_flipbook").flipBook(pdf, options);
+		    flipBook = $("#hdfc_flipbook").flipBook(jpg, options);
 		  });
 	
 	</script>
