@@ -1116,7 +1116,7 @@ a.customLinkAnnotation,
 .customHtmlAnnotation,
 .customVideoAnnotation {
   background-color: transparent;
-  background-color: rgb(255, 255, 0);
+  background-color: transparent;
   /* border-bottom: 1px solid #2196F3; */
   opacity: 0.1;
 }
@@ -1129,9 +1129,9 @@ section.linkAnnotation a:hover,
 a.linkAnnotation:hover,
 .highlightAnnotation:hover,
 a.customLinkAnnotation:hover {
-  opacity: 0.4;
+  opacity: 0.3;
   border-color: transparent;
-  background-color: #2196F3;
+  background-color: $hdfc-red;
 }
 
 .annotationDiv {
